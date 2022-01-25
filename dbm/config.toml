@@ -1,0 +1,27 @@
+title = "数据库配置"
+
+# 数据库配置信息
+[db_conf]
+
+    # oracle数据库配置信息，目前使用Oracle12c
+    [db_conf.oracle]
+
+        # 正元本地开发环境的oracle数据库
+        [db_conf.oracle.local]
+
+        oracle_host = '172.16.1.246'
+        oracle_port = '1521'
+        oracle_sid = ''
+        oracle_service_name = 'bigpdb.localdomain'
+        oracle_username = 'biguser'
+        oracle_password = 'hz310012'
+
+
+# 脚本配置信息
+[script_conf]
+
+    # 脚本运行参数配置信息
+    [script_conf.run_param]
+
+    # 运行时需要输入的参数个数
+    etl_input_params_num = 2
